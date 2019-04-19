@@ -193,7 +193,7 @@ body {
 		border-bottom-style: solid;
 		border-bottom-color: rgb(255, 194, 18);
 
-		background-image: url("https://static1.squarespace.com/static/52872d3de4b0b40559bc0875/t/59f04e7790bcce8fabfbe62e/1508920962098/201617_team_photo.jpg");
+		background-image: url("https://www.cmc.edu/sites/default/files/news/images/2018/10/20181029-mun-second.jpg");
 		background-size: cover;
     }
         #intro-title-div {
@@ -355,7 +355,7 @@ body {
 					width: 100%;
 					margin: 0;
 					padding: 0;
-					height: 30vh;
+					height: 38vh;
 				}
 				.person-name {
 					font-family: 'Lora', serif;

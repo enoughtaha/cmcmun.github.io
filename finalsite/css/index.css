@@ -1,0 +1,275 @@
+html {
+	text-align: center;
+}
+
+button {
+	outline: none;
+}
+
+header {
+	display: none;
+}
+
+/* Unselectable with click (pointer change on hover) */
+.unselectable1 {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	cursor: pointer;
+}
+/*Unselectable without click (no pointer change on hover) */
+.unselectable2 {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#header-container {
+	width: 100%;
+	background-color: white;
+
+	overflow-y: visible;
+
+	position: fixed;
+}
+
+/* This @media is for mobile CSS code */
+@media only screen and (max-width: 769px) {
+	/* Intro page CSS code*/
+	html {
+		-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+	}
+
+	#header-container {
+		width: 100vw;
+		height: 11vh;
+	}
+		#header-desk {
+			width: 0%;
+			display: none;
+		}
+		#header-mobile {
+			width: 100%;
+			height: 100%;
+
+			overflow-y: visible;
+
+			background-color: #981A31;
+		}
+			#header-extend {
+				width: 100vw;
+				height: 0;
+				background-color: #981A31;
+
+				overflow: hidden;
+			}
+				.extend-header {
+					height: 50vw;
+				}
+			#header-mobile-container {
+				width: 100%;
+				height: 100%;
+
+				display: flex;
+				flex-direction: row;
+			}
+			.header-sec {
+				width: 15%;
+				height: 100%;
+			}
+					#header-menu-b {
+
+						margin: auto;
+
+						width: 8vh;
+						height: 8vh;
+
+						border: none;
+
+						display: flex;
+						flex-direction: column;
+
+						background-color: transparent;
+						text-align: center;
+					}
+						.head-menu-bars {
+							margin-top: 3vh;
+							margin-left: 0.8vh;
+							font-size: 5vh;
+							text-align: center;
+
+							color: #e0aa0f;
+
+							-webkit-transition: 0.8s;
+						  -moz-transition: 0.8s;
+						  -ms-transition: 0.8s;
+						  -o-transition: 0.8s;
+							transition: 0.8s;
+						}
+						.head-menu-flip {
+							-webkit-transform: rotate(180deg);
+    					-moz-transform: rotate(180deg);
+    					-ms-transform: rotate(180deg);
+    					-o-transform: rotate(180deg);
+    					transform: rotate(180deg);
+						}
+					.head-mid-b-img {
+						height: 4.5vh;
+					}
+			.header-mid {
+				width: 70%;
+				height: 100%;
+
+				background-color: 981A31;
+
+				border: none;
+
+				-webkit-transition: all 0.3s;
+				transition: all 0.3s;
+			}
+				#head-mid-button {
+					width: 100%;
+					height: 100%;
+
+					border: none;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 10vw;
+					font-weight: 600;
+					color: #e0aa0f;
+
+					background-color: transparent;
+				}
+
+
+		#in-foot {
+			width: 100vw;
+
+			margin: 0;
+			padding: 0.5vw;
+
+			font-family: 'Open Sans', sans-serif;
+			font-size: 3vw;
+			font-weight: 400;
+			line-height: 2.5vh;
+
+			background-color: #981A31;
+			color: #e0aa0f;
+		}
+}
+
+/* This @media is for desktop CSS code */
+@media only screen and (min-width: 769px) {
+	/* Intro page CSS code*/
+	#header-container {
+		width: 100vw;
+		height: 13vh;
+	}
+		#header-mobile {
+			width: 0%;
+			display: none;
+		}
+		#header-desk {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+		.head-d {
+			width: 45%;
+			height: 100%;
+		}
+			.header-button-container {
+				display: flex;
+				flex-direction: row;
+				margin-left: 10%;
+				margin-top: 4%;
+			}
+			.header-button {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 1.5vw;
+				font-weight: 600;
+
+
+				padding: 0;
+				width: 16vw;
+				height: 5vh;
+				line-height: 4.65vh;
+
+				background-color: transparent;
+
+				border-style: solid;
+				border-width: 0.15vw;
+				border-color: #e0aa0f;
+
+				color: #e0aa0f;
+
+				-webkit-transition: all 0.3s;
+				transition: all 0.3s;
+			}
+				.header-button:hover {
+					border-color: #fed22d;
+					background-color: #fed22d;
+					color: white;
+
+					font-size: 1.65vw;
+					line-height: 4.85vh;
+				}
+
+		.head-d-mid {
+			width: 10%;
+			height: 110%;
+
+			background-color: #981A31;
+
+			border-style: dashed;
+			border-width: 0.25vw;
+			border-color: #e0aa0f;
+			border-top: none;
+  		box-shadow: 0vw 0.25vw 0.1vw rgba(0, 0, 0, 0.3);
+
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+			#head-mid-button {
+				width: 100%;
+				height: 100%;
+
+				border: none;
+				background-color: transparent;
+				color: transparent;
+			}
+				.head-mid-b-img {
+					width: 85%;
+
+					margin: auto;
+
+					-webkit-transition: all 0.3s;
+					transition: all 0.3s;
+				}
+				.head-d-mid:hover {
+					border-color: #fed22d;
+				}
+				.head-d-mid:hover .head-mid-b-img {
+					width: 90%;
+					filter: brightness(125%);
+				}
+	#in-foot {
+		width: 100vw;
+
+		margin: 0;
+		padding: 0.5vw;
+
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1vw;
+		font-weight: 400;
+		line-height: 2.5vh;
+
+		background-color: #981A31;
+		color: #e0aa0f;
+	}
+}

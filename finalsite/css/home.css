@@ -1,24 +1,64 @@
 #intro {
 	width: 100vw;
 	height: 100vh;
+
+	background-color: #981A31;
+	overflow: hidden;
 }
-	.intro-cmc {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 5vw;
-		font-weight: 500;
-		color: #ffe1ba;
+	.intro-bg-vid {
+		width: 100%;
+		height: auto;
+
+		z-index: 0;
 	}
+	.intro-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100vw;
+		height: 100vh;
+
+		text-align: left;
+	}
+		.intro-one {
+			width: 20vw;
+			margin-top: 75vh;
+			background-color: rgba(152, 26, 49, 1);
+
+		}
+			.intro-cmc {
+				font-family: 'Cinzel', serif;
+				font-size: 2vw;
+				color: #ffe1ba;
+
+				padding: 0.5vh;
+			}
+			.intro-mun {
+				font-family: 'Oswald', sans-serif;
+				font-size: 2.5vw;
+				font-weight: 500;
+				color: #ffe1ba;
+				padding: 0.3vw;
+				padding-top: 0;
+			}
+				.intro-one:hover .intro-cmc:before {
+					content: "CMC";
+				}
+				.intro-one:hover .intro-cmc:after {
+					content: "Claremont McKenna College";
+				}
 
 #about {
 	width: 100vw;
 }
 	.about-mun {
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 		background-color: green;
 	}
 	.about-cmc {
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 		background-color: red;
 	}

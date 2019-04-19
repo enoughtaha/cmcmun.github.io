@@ -55,7 +55,7 @@
 				border: none;
 			}
 			.intro-down {
-				color: #ffe1ba;
+				color: #e0aa0f;
 
 				font-size: 9vw;
 
@@ -66,7 +66,7 @@
 				text-shadow: 0 0 5vw #981A31;
 			}
 			.intro-text {
-				color: #ffe1ba;
+				color: #e0aa0f;
 
 				font-family: 'Cinzel', serif;
 				font-weight: 800;
@@ -85,7 +85,7 @@
 
 			border-width: 0.7vw;
 			border-style: solid;
-			border-color: #ffe1ba;
+			border-color: #e0aa0f;
 			border-left: none;
 			border-right: none;
 			border-top: none;
@@ -93,7 +93,7 @@
 			.intro-cmc {
 				font-family: 'Cinzel', serif;
 				font-size: 6vw;
-				color: #ffe1ba;
+				color: #e0aa0f;
 
 				padding: 0.5vh;
 			}
@@ -101,7 +101,7 @@
 				font-family: 'Oswald', sans-serif;
 				font-size: 8vw;
 				font-weight: 500;
-				color: #ffe1ba;
+				color: #e0aa0f;
 				padding: 0.3vw;
 				padding-top: 0;
 			}
@@ -145,7 +145,7 @@
 			.intro-cmc {
 				font-family: 'Cinzel', serif;
 				font-size: 2vw;
-				color: #ffe1ba;
+				color: #e0aa0f;
 
 				padding: 0.5vh;
 			}
@@ -153,7 +153,7 @@
 				font-family: 'Oswald', sans-serif;
 				font-size: 2.5vw;
 				font-weight: 500;
-				color: #ffe1ba;
+				color: #e0aa0f;
 				padding: 0.3vw;
 				padding-top: 0;
 			}

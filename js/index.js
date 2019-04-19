@@ -20,3 +20,14 @@ vw = $(window).width()/100;
 
 });
   }(jQuery));
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $("video").attr("src","media/mobileintro.mp4");
+
+  }
+
+  $('.intro-continue').click(function() {
+      $('html,body').animate({
+              scrollTop: $('#about').offset().top},
+              'slow');
+  });

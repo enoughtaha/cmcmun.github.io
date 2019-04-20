@@ -134,13 +134,12 @@
 		text-align: left;
 	}
 		.intro-continue {
-			display: none;
+			display: hidden;
 		}
 		.intro-one {
 			width: 20vw;
 			margin-top: 75vh;
 			background-color: rgba(152, 26, 49, 1);
-
 		}
 			.intro-cmc {
 				font-family: 'Cinzel', serif;

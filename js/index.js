@@ -31,3 +31,34 @@ vw = $(window).width()/100;
               scrollTop: $('#about').offset().top},
               'slow');
   });
+
+  $('.head-d-mid').click(function() {
+    if (document.title == "CMC MUN") {
+      $('html,body').animate({
+              scrollTop: $('#intro').offset().top},
+              'slow');
+            } else {
+                document.location.href = "index.html";
+            }
+  });
+
+  $('#home-mun').click(function() {
+    if (document.title == "CMC MUN") {
+      $('html,body').animate({
+              scrollTop: $('.about-mun').offset().top},
+              'slow');
+            } else {
+                document.location.href = "index.html";
+            }
+  });
+
+  $('#home-us').click(function() {
+    if (document.title == "CMC MUN") {
+
+      $('html,body').animate({
+              scrollTop: $('.about-us').offset().top},
+              'slow');
+            } else {
+                document.location.href = "index.html";
+            }
+  });

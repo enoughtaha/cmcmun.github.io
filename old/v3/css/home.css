@@ -1,0 +1,166 @@
+#intro {
+	width: 100vw;
+	height: 100vh;
+
+	background-color: #981A31;
+	overflow: hidden;
+}
+
+#about {
+	width: 100vw;
+}
+	.about-mun {
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+	}
+	.about-cmc {
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+/* This @media is for mobile CSS code */
+@media only screen and (max-width: 769px) {
+	/* Intro page CSS code*/
+	.intro-bg-vid {
+		height: 100%;
+		width: auto;
+
+		z-index: 0;
+	}
+	.intro-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100vw;
+		height: 100vh;
+
+		text-align: left;
+	}
+		.intro-continue {
+			z-index: 1;
+
+			background-color: transparent;
+
+			text-align: center;
+			margin-top: 10vh;
+		}
+			.intro-continue-b {
+				margin: 0;
+				padding: 0;
+
+				background-color: transparent;
+				border: none;
+			}
+			.intro-down {
+				color: #e0aa0f;
+
+				font-size: 9vw;
+
+				margin: 0;
+				margin-top: 1vh;
+				padding: 0;
+
+				text-shadow: 0 0 5vw #981A31;
+			}
+			.intro-text {
+				color: #e0aa0f;
+
+				font-family: 'Cinzel', serif;
+				font-weight: 800;
+				font-size: 7vw;
+
+				margin: 0;
+				padding: 0;
+
+				text-shadow: 0 0 5vw #981A31;
+			}
+		.intro-one {
+			width: 65vw;
+			padding-left: 1vw;
+			margin-top: 65vh;
+			background-color: rgba(152, 26, 49, 1);
+
+			border-width: 0.7vw;
+			border-style: solid;
+			border-color: #e0aa0f;
+			border-left: none;
+			border-right: none;
+			border-top: none;
+		}
+			.intro-cmc {
+				font-family: 'Cinzel', serif;
+				font-size: 6vw;
+				color: #e0aa0f;
+
+				padding: 0.5vh;
+			}
+			.intro-mun {
+				font-family: 'Oswald', sans-serif;
+				font-size: 8vw;
+				font-weight: 500;
+				color: #e0aa0f;
+				padding: 0.3vw;
+				padding-top: 0;
+			}
+				.intro-one:hover .intro-cmc:before {
+					content: "CMC";
+				}
+				.intro-one:hover .intro-cmc:after {
+					content: "Claremont McKenna College";
+				}
+}
+
+/* This @media is for desktop CSS code */
+@media only screen and (min-width: 770px) {
+	/* Intro page CSS code*/
+
+	.intro-bg-vid {
+		width: 100%;
+		height: auto;
+
+		z-index: 0;
+	}
+	.intro-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100vw;
+		height: 100vh;
+
+		text-align: left;
+	}
+		.intro-continue {
+			display: hidden;
+		}
+		.intro-one {
+			width: 20vw;
+			margin-top: 75vh;
+			background-color: rgba(152, 26, 49, 1);
+		}
+			.intro-cmc {
+				font-family: 'Cinzel', serif;
+				font-size: 2vw;
+				color: #e0aa0f;
+
+				padding: 0.5vh;
+			}
+			.intro-mun {
+				font-family: 'Oswald', sans-serif;
+				font-size: 2.5vw;
+				font-weight: 500;
+				color: #e0aa0f;
+				padding: 0.3vw;
+				padding-top: 0;
+			}
+				.intro-one:hover .intro-cmc:before {
+					content: "CMC";
+				}
+				.intro-one:hover .intro-cmc:after {
+					content: "Claremont McKenna College";
+				}
+
+}

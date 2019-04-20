@@ -1,166 +1,133 @@
 #intro {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-	background-color: #981A31;
+  background-color: #981A31;
 	overflow: hidden;
 }
 
 #about {
-	width: 100vw;
-}
-	.about-mun {
-		width: 100vw;
-		height: 100vh;
-		background-color: white;
-	}
-	.about-cmc {
-		width: 100vw;
-		height: 100vh;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
+  width: 100vw;
+  height: 100vh;
 
-/* This @media is for mobile CSS code */
-@media only screen and (max-width: 769px) {
-	/* Intro page CSS code*/
-	.intro-bg-vid {
-		height: 100%;
-		width: auto;
-
-		z-index: 0;
-	}
-	.intro-overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		width: 100vw;
-		height: 100vh;
-
-		text-align: left;
-	}
-		.intro-continue {
-			z-index: 1;
-
-			background-color: transparent;
-
-			text-align: center;
-			margin-top: 10vh;
-		}
-			.intro-continue-b {
-				margin: 0;
-				padding: 0;
-
-				background-color: transparent;
-				border: none;
-			}
-			.intro-down {
-				color: #e0aa0f;
-
-				font-size: 9vw;
-
-				margin: 0;
-				margin-top: 1vh;
-				padding: 0;
-
-				text-shadow: 0 0 5vw #981A31;
-			}
-			.intro-text {
-				color: #e0aa0f;
-
-				font-family: 'Cinzel', serif;
-				font-weight: 800;
-				font-size: 7vw;
-
-				margin: 0;
-				padding: 0;
-
-				text-shadow: 0 0 5vw #981A31;
-			}
-		.intro-one {
-			width: 65vw;
-			padding-left: 1vw;
-			margin-top: 65vh;
-			background-color: rgba(152, 26, 49, 1);
-
-			border-width: 0.7vw;
-			border-style: solid;
-			border-color: #e0aa0f;
-			border-left: none;
-			border-right: none;
-			border-top: none;
-		}
-			.intro-cmc {
-				font-family: 'Cinzel', serif;
-				font-size: 6vw;
-				color: #e0aa0f;
-
-				padding: 0.5vh;
-			}
-			.intro-mun {
-				font-family: 'Oswald', sans-serif;
-				font-size: 8vw;
-				font-weight: 500;
-				color: #e0aa0f;
-				padding: 0.3vw;
-				padding-top: 0;
-			}
-				.intro-one:hover .intro-cmc:before {
-					content: "CMC";
-				}
-				.intro-one:hover .intro-cmc:after {
-					content: "Claremont McKenna College";
-				}
+  border-top-style: solid;
+  border-top-width: 0.3vw;
+  border-top-color: #e9c357;
 }
 
-/* This @media is for desktop CSS code */
-@media only screen and (min-width: 770px) {
-	/* Intro page CSS code*/
+@media only screen and (max-width: 768px) {
+  .intro-bg-vid {
+    height: 100%;
+    width: auto;
+    z-index: 0;
+  }
+    .intro-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-	.intro-bg-vid {
-		width: 100%;
-		height: auto;
+      z-index: 1;
 
-		z-index: 0;
-	}
-	.intro-overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		width: 100vw;
-		height: 100vh;
+      width: 100%;
+      height: 100%;
+    }
+    .intro-mobile {
+      display: = block;
 
-		text-align: left;
-	}
-		.intro-continue {
-			display: hidden;
-		}
-		.intro-one {
-			width: 20vw;
-			margin-top: 75vh;
-			background-color: rgba(152, 26, 49, 1);
-		}
-			.intro-cmc {
-				font-family: 'Cinzel', serif;
-				font-size: 2vw;
-				color: #e0aa0f;
+      text-align: left;
+    }
+      .intro-m-title {
+        text-align: left;
 
-				padding: 0.5vh;
-			}
-			.intro-mun {
-				font-family: 'Oswald', sans-serif;
-				font-size: 2.5vw;
-				font-weight: 500;
-				color: #e0aa0f;
-				padding: 0.3vw;
-				padding-top: 0;
-			}
-				.intro-one:hover .intro-cmc:before {
-					content: "CMC";
-				}
-				.intro-one:hover .intro-cmc:after {
-					content: "Claremont McKenna College";
-				}
+        background-color: rgba(152, 26, 49, 0.8);
+
+        display: inline-block;
+        padding: 1vw;
+
+        margin-top: 70vh;
+
+        border-style: double;
+        border-width: 0.9vw;
+        border-spacing: 3vw;
+        border-color: #e9c357;
+        border-left: none;
+
+        box-shadow: -1vw -1vw 2vw rgba(0, 0, 0, 0.8);
+      }
+        .intro-m-cmc {
+          font-family: 'Cinzel', serif;
+  				font-size: 6vw;
+  				color: #e0aa0f;
+
+          margin: 0;
+          padding: 0;
+        }
+        .intro-m-mun {
+          margin: 0;
+          padding: 0;
+
+          font-family: 'Oswald', sans-serif;
+  				font-size: 8vw;
+  				font-weight: 500;
+  				color: #e9c357;
+        }
+      .intro-m-nav {
+        width: 100vw;
+        height: 15vh;
+
+        position: absolute;
+        top: 85vh;
+
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: row;
+      }
+        .intro-button {
+          width: 20%;
+          margin-left: 2.5%;
+          margin-right: 2.5%;
+          height: 100%;
+
+          border-style: solid;
+          border-width: 0.3vw;
+          border-spacing: 3vw;
+          border-color: #e9c357;
+          border-bottom: none;
+
+          font-family: 'Oswald', sans-serif;
+  				font-size: 4vw;
+  				font-weight: 500;
+  				color: #e9c357;
+
+          background-color: rgba(152, 26, 49, 0.8);
+
+          box-shadow: -1vw -1vw 2vw rgba(0, 0, 0, 0.8);
+
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+          .intro-mun-b-icon {
+            font-size: 8vw;
+            width: 100%;
+            margin-bottom: 2vh;
+
+          }
+          .intro-button:hover {
+            background-color: #791427;
+            color: #e0aa0f;
+          }
+    .intro-desktop {
+      display: hidden;
+    }
+
+  .text-section {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+
 
 }

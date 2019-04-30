@@ -151,6 +151,98 @@
 }
 
 @media only screen and (min-width: 769px) {
+  .intro-bg-vid {
+    width: 100%;
+    z-index: 0;
+  }
+    .intro-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
 
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+    }
+    .intro-m-title {
+
+      background-color: rgba(152, 26, 49, 0.8);
+
+      display: inline-block;
+      padding: 1vw;
+
+      position: relative;
+      top: 50vh;
+
+      border-style: double;
+      border-width: 0.35vw;
+      border-color: #e9c357;
+
+      box-shadow: -1vw -1vw 2vw rgba(0, 0, 0, 0.8);
+    }
+      .intro-m-cmc {
+        font-family: 'Cinzel', serif;
+        font-size: 1.5vw;
+        color: #e0aa0f;
+
+        margin: 0;
+        padding: 0;
+      }
+      .intro-m-mun {
+        margin: 0;
+        padding: 0;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5vw;
+        font-weight: 500;
+        color: #e9c357;
+      }
+      .intro-m-nav {
+        position: relative;
+        top: 60vh;
+        width: 50vw;
+        margin-left: 25vw;
+
+        display: flex;
+        flex-direction: row;
+      }
+
+      .intro-button {
+        width: 20%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+
+        border-style: solid;
+        border-width: 0.15vw;
+        border-spacing: 3vw;
+        border-color: #e9c357;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.25vw;
+        font-weight: 500;
+        color: #e9c357;
+
+        background-color: rgba(152, 26, 49, 0.8);
+
+        box-shadow: -1vw -1vw 2vw rgba(0, 0, 0, 0.8);
+
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+
+        cursor: pointer;
+
+        padding: 0.5vw;
+      }
+        .intro-mun-b-icon {
+          font-size: 1.75vw;
+          width: 100%;
+          margin-bottom: 1vh;
+
+        }
+        .intro-button:hover {
+          background-color: #791427;
+          color: #e0aa0f;
+        }
 
 }

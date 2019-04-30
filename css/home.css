@@ -10,10 +10,6 @@
   width: 100vw;
   height: 100vh;
 
-  border-top-style: solid;
-  border-top-width: 0.3vw;
-  border-top-color: #e9c357;
-
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -36,23 +32,22 @@
     .intro-mobile {
       display: = block;
 
-      text-align: left;
+      text-align: center;
     }
       .intro-m-title {
-        text-align: left;
 
         background-color: rgba(152, 26, 49, 0.8);
 
         display: inline-block;
         padding: 1vw;
 
-        margin-top: 70vh;
+
+        margin-top: 60vh;
 
         border-style: double;
         border-width: 0.9vw;
         border-spacing: 3vw;
         border-color: #e9c357;
-        border-left: none;
 
         box-shadow: -1vw -1vw 2vw rgba(0, 0, 0, 0.8);
       }
@@ -78,7 +73,7 @@
         height: 15vh;
 
         position: absolute;
-        top: 85vh;
+        top: 72.5vh;
 
         background-color: transparent;
 
@@ -95,7 +90,6 @@
           border-width: 0.3vw;
           border-spacing: 3vw;
           border-color: #e9c357;
-          border-bottom: none;
 
           font-family: 'Oswald', sans-serif;
   				font-size: 4vw;

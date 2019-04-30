@@ -1,6 +1,8 @@
 html {
 	text-align: center;
 	overflow-x: hidden;
+
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 button {

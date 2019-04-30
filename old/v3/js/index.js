@@ -7,16 +7,21 @@ vw = $(window).width()/100;
 
 (function ($) {
   $(document).ready(function(){
-    $(function () {
-        $(window).scroll(function () {
+    if (document.title == "CMC MUN") {
+      $(function () {
+          $(window).scroll(function () {
 
-            if ($(this).scrollTop() > 30) {
-                $('header').fadeIn(300);
-            } else {
-                 $('header').fadeOut(300);
-            }
-        });
-    });
+              if ($(this).scrollTop() > 30) {
+                  $('header').fadeIn(300);
+              } else {
+                   $('header').fadeOut(300);
+              }
+          });
+      });
+    } else {
+      $('header').fadeIn(0);
+    }
+
 
 });
   }(jQuery));
